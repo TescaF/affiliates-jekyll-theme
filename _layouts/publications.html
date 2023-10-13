@@ -1,0 +1,35 @@
+---
+layout: default
+title: "Publications"
+---
+<h4 class="mt-5 mb-4 pb-2 border-bottom"><span class="text-capitalize small font-weight-bold">Filter by topic:</span>  <ul class="tags">
+    <li>
+      <a href="{{ site.baseurl }}/pubs">
+        {% if page.topic_filter == "all" %}
+          <strong>Show All</strong>
+        {% else %}
+          Show All
+        {% endif %}
+      </a>
+    </li>
+    {% for category in site.categories %}
+      <li>
+        <a href="{{ site.baseurl }}/pubs/{{ category[0] | slugify }}">
+          {% if page.topic_filter == category[0] %}
+            <strong>{{ category[0] }}</strong>
+          {% else %}
+            {{ category[0] }}
+          {% endif %}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</h4>
+
+{% for post in site.posts %}
+  {% if post.is_pub == true %}
+    {% if page.topic_filter == "all" or post.categories contains page.topic_filter %}
+      {% include pubrow.html %}
+    {% endif %}
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,11 @@
+<!-- begin post -->
+<div class="card">
+    <a href="{{ person.website | absolute_url }}">
+        <img class="rounded mb-4" src="{{ site.baseurl }}/{{ person.photo }}" alt="{{ person.name }}"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title h4 serif-font"><a href="{{ person.website | absolute_url }}">{{ person.name }}</a></h2>
+        <p class="card-text text-muted">{{ person.title }}</p>
+    </div>
+</div>
+<!-- end post -->

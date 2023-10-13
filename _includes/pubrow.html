@@ -1,0 +1,18 @@
+<!-- begin post -->
+<div class="row">
+  <div class="col-md-3">
+    <a href="{{ post.url | absolute_url }}">
+      <img class="rounded mb-2" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}">
+    </a>
+  </div>
+  <div class="col-md-9">
+    <h2 class="h5 serif-font mb-0"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+    {% if post.venue %} <p class="card-text text-muted mb-0">{{ post.venue }}</p> {% endif %}
+    {% if post.authors %} <p class="card-text text-muted mb-0">{{ post.authors }}</p> {% endif %}
+    <a href={{ post.url | absolute_url }}>[Abstract]</a> &ensp; 
+    <a href={{ post.url | absolute_url }}#citation>[Cite]</a> 
+    {% if post.pdf_link %} &ensp; <a href={{ post.pdf_link | absolute_url }}>[PDF]</a> {% endif %}
+    {% if post.video_link %} &ensp; <a href={{ post.video_link | absolute_url }}>[Video]</a> {% endif %}
+  </div>
+</div>
+<!-- end post -->

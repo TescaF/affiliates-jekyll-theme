@@ -1,0 +1,27 @@
+people:
+
+- name: "Tesca Fitzgerald"
+  ref_name: tescaf
+  title: "PI"
+  role: "pi"
+  website: "https://www.tescafitzgerald.com/"
+  photo: "assets/images/4.jpg"
+
+- name: "Test"
+  ref_name: jackm
+  title: "PhD Student"
+  role: "phd"
+  website: "https://www.tescafitzgerald.com/"
+  photo: "assets/images/4.jpg"
+
+- name: "Test 2"
+  title: "Masters' Student"
+  role: "ms"
+  website: "https://www.tescafitzgerald.com/"
+  photo: "assets/images/4.jpg"
+
+- name: "Test 3"
+  title: "PhD Student"
+  role: "phd"
+  website: "https://www.tescafitzgerald.com/"
+  photo: "assets/images/4.jpg"

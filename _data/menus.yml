@@ -4,29 +4,14 @@ topmenu:
 - title: Home
   url: ""
 
-- title: About
-  url: "about/"
+- title: Team
+  url: "team/"
 
-- title: Contact
-  url: "contact/"
+- title: Research
+  url: "research/"
 
-- title: Get this theme  
-  url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/
-  class: "ml-2 btn btn-dark text-white px-3"
-  external: true
+- title: Publications
+  url: "pubs/"
 
-# Footer Menu
-footermenu:
-
-- title: Home
-  url: ""
-
-- title: Privacy Policy
-  url: "privacy-policy/"
-
-- title: Contact
-  url: "contact/"
-
-- title: Download
-  url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/  
-  external: true
+- title: Join us!
+  url: "join-us/"
